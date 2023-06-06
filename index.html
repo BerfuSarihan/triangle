@@ -1,42 +1,42 @@
 <html>
   <head>
-  <!-- Google tag (gtag.js) -->
-  <script src="https://www.googleoptimize.com/optimize.js?id=OPT-KHBKH7M"></script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-72J1SXPKCX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <script src="https://www.googleoptimize.com/optimize.js?id=OPT-KHBKH7M"></script>
+     <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-72J1SXPKCX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    gtag('config', 'G-72J1SXPKCX');
-  </script>
-  <script src="triangle.js"></script> 
-  <script>
+      gtag('config', 'G-72J1SXPKCX');
+    </script>
+    <script src="triangle.js"></script> 
+    <script>
     /*
      * Gets the lenghts of the sides of the triangle from the HTML elements
      * calculates the type of triangle and shows the type on the page
      */
-    function chekTriangleType() {
+      function chekTriangleType() {
       // Get the lengths of the sides from the UI
-      let a = document.getElementById("input-a").value;
-      let b = document.getElementById("input-b").value;
-      let c = document.getElementById("input-c").value;
+        let a = document.getElementById("input-a").value;
+        let b = document.getElementById("input-b").value;
+        let c = document.getElementById("input-c").value;
 
       // Calculate the type of Triangle
-      triangleType = getTriangleType(a, b, c);
+        triangleType = getTriangleType(a, b, c);
       // Shows the type of Triangle in the web site
-      displayTriangleType(triangleType);
+        displayTriangleType(triangleType);
     }
 
     /*
      * Updates the HTML element result with the passed argument 
      * (used for the triangle type)
      */
-    function displayTriangleType(type) {
-      document.getElementById("result").innerHTML = '<b>Result</b> ' + type;
+      function displayTriangleType(type) {
+        document.getElementById("result").innerHTML = '<b>Result</b> ' + type;
     }
 
-    </script>
+      </script>
     </head>
     <body>
         <h1> Calculate Triangle Type </h1>
